@@ -1,7 +1,7 @@
 <template>
   <div class="home-view">
     <div class="midle-content">
-      <h1>I'm Felipe Greghi</h1>
+      <h1>I'm Felipe<br>Greghi</h1>
       <img src="@/assets/photo.png">
     </div>
     
@@ -26,17 +26,50 @@ export default {
 </script>
 
 <style scoped>
-/* O contêiner principal ocupa 100% da tela */
+/* Definindo animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Aplicando animações */
 .home-view {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinha os itens à esquerda */
+  align-items: flex-start;
   width: 100%;
   height: 100%;
   background-color: #f5f5f5;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.midle-content{
+.midle-content {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -48,16 +81,17 @@ export default {
   width: 325px;
   height: 400px;
   position: absolute;
-  bottom: -120px; /* Ajuste este valor conforme necessário para ultrapassar os limites da div */
-  left: 75%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Centraliza horizontalmente */
+  bottom: -120px;
+  top: 25%;
+  left: 75%;
+  transform: translateX(-50%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .home-view h1 {
-  margin: 0 0 1em 0; /* Margem inferior para separar do conteúdo */
-  font-size: 5em; /* Ajuste o tamanho da fonte conforme necessário */
-  color: #363E3E; /* Cor do texto */
+  margin: 0 0 1em 0;
+  font-size: 5em;
+  color: #363E3E;
   margin-top: auto;
   max-width: 40%;
   margin-left: 10%;
@@ -66,7 +100,7 @@ export default {
 
 .content {
   background-color: #363E3E;
-  border-radius: 5em 5em 0 0; 
+  border-radius: 5em 5em 0 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -74,12 +108,14 @@ export default {
   width: 100%;
   height: 50%;
   padding-bottom: 2.5em;
+  margin-top: auto;
 }
 
 .text-section {
   color: #ffffff;
   max-width: 50%;
   margin-left: 5%;
+  animation: slideInLeft 1s ease-in-out;
 }
 
 .text-section h1 {
@@ -110,11 +146,6 @@ export default {
   font-size: 1.5rem;
 }
 
-.image-section {
-  position: relative;
-  margin-right: 5%;
-}
-
 .profile-img {
   width: 300px;
   height: auto;
@@ -134,5 +165,77 @@ export default {
 .badge span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+  .home-view h1 {
+    font-size: 4em;
+  }
+
+  .midle-content img {
+    width: 275px;
+    height: 350px;
+  }
+  .text-section p {
+    font-size: 1rem;
+  }
+
+  .portfolio-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-view {
+    align-items: center;
+  }
+
+  .midle-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .midle-content img {
+    display: none;
+  }
+
+  .home-view h1 {
+    font-size: 4.2em;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    height: auto;
+    padding: 2em 1em;
+  }
+
+  .text-section {
+    max-width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .portfolio-btn {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-view h1 {
+    font-size: 2.5em;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio-btn {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
 }
 </style>

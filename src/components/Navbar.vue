@@ -4,7 +4,8 @@
       <img src="@/assets/logo.png" alt="Logo" id="logo" />
       <p><b>Felipe</b> Greghi</p>
     </router-link>
-    <ul class="nav-links">
+    <button class="menu-toggle" @click="toggleMenu">☰</button>
+    <ul :class="['nav-links', { 'nav-links-active': isMenuActive }]">
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/about">About Me</router-link></li>
       <li><router-link to="/portfolio">My Portfolio</router-link></li>
@@ -21,10 +22,28 @@
 <script>
 export default {
   name: 'Navbar',
-}
+  data() {
+    return {
+      isMenuActive: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuActive = !this.isMenuActive;
+    },
+  },
+};
 </script>
 
 <style scoped>
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
 .logo-link {
   display: flex;
   align-items: center;
@@ -62,6 +81,10 @@ export default {
   display: flex;
   gap: 2.5em;
   margin: 0;
+}
+
+.nav-links-active {
+  display: block;
 }
 
 .nav-links li {
@@ -116,5 +139,42 @@ export default {
 
 a:active {
   color: #46BABE;
+}
+
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #faf8f4;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-links-active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .work-with-me {
+    display: none;
+  }
+
+  .nav-links-active .work-with-me {
+    display: flex;
+    justify-content: center;
+  }
 }
 </style>
