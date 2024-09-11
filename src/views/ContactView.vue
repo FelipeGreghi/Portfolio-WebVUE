@@ -1,7 +1,10 @@
 <template>
     <div class="contact-container">
       <div class="left-side">
-        <h1>Let's chat.<br />Tell me about your project.</h1>
+        <h1>
+          Let's chat.<br />
+          Tell me about your project.
+        </h1>
         <p>Let's create something together ✌️</p>
         <a href="mailto:felipegreghi25@gmail.com" class="email-link">
           Mail me at <strong>felipegreghi25@gmail.com</strong>
@@ -10,11 +13,25 @@
   
       <div class="right-side">
         <form @submit.prevent="sendMessage">
-          <h3>Send us a message 🚀</h3>
-          <input type="text" v-model="formData.name" placeholder="Full name*" required />
-          <input type="email" v-model="formData.email" placeholder="Email address*" required />
+          <h3>Send me a message 🚀</h3>
+          <input
+            type="text"
+            v-model="formData.name"
+            placeholder="Full name*"
+            required
+          />
+          <input
+            type="email"
+            v-model="formData.email"
+            placeholder="Email address*"
+            required
+          />
           <input type="text" v-model="formData.subject" placeholder="Subject" />
-          <textarea v-model="formData.message" placeholder="Tell us more about your project*" required></textarea>
+          <textarea
+            v-model="formData.message"
+            placeholder="Tell us more about your project*"
+            required
+          ></textarea>
           <button type="submit">Send message</button>
         </form>
       </div>
@@ -22,21 +39,23 @@
   </template>
   
   <script>
-  export default {
+    export default {
     data() {
       return {
         formData: {
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
         }
       };
     },
     methods: {
       sendMessage() {
-        // Aqui você pode adicionar a lógica para envio do formulário
-        console.log("Form data: ", this.formData);
+        const { name, email, subject, message } = this.formData;
+        const formattedMessage = `*Contact Form Submission*\nName: ${name}\nE-mail: ${email}\n\nSubject: ${subject}\n\nDescription of the project:\n*------------------------------------*\n${message}\n*------------------------------------*`;
+        const whatsappUrl = `https://wa.me/5516991609156?text=${encodeURIComponent(formattedMessage)}`;
+        window.open(whatsappUrl, '_blank');
       }
     }
   };
@@ -46,6 +65,7 @@
   .contact-container {
     display: flex;
     justify-content: space-between;
+    max-width: 70%;
     padding: 5%;
     background-color: #fff;
     border-radius: 15px;
@@ -106,5 +126,4 @@
   button:hover {
     background-color: #509295;
   }
-  </style>
-  
+</style>
