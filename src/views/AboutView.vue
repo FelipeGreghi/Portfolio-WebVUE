@@ -36,11 +36,31 @@ export default {
 </script>
 
 <style scoped>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .about {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 10%;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .content {
@@ -55,7 +75,9 @@ export default {
 }
 
 .text-section {
+  flex: 2;
   padding: 2rem;
+  animation: slideInRight 1.2s ease-in-out;
 }
 
 .text-section h1 {
@@ -94,5 +116,53 @@ export default {
 
 #github-link:hover {
   color: #ad3f11; /* Cor de hover para GitHub */
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section img {
+    margin-top: 1rem;
+    max-height: 350px;
+    max-width: 175px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .text-section {
+    padding: 1rem;
+  }
+
+  .text-section h1 {
+    font-size: 2rem;
+  }
+
+  .text-section p {
+    font-size: 14px;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-section img {
+    max-width: 80%;
+  }
+
+  .text-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 12px;
+  }
+
+  .social-media a {
+    font-size: 1.5rem;
+  }
 }
 </style>
