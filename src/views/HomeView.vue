@@ -141,6 +141,10 @@ export default {
   align-items: center;
 }
 
+.portfolio-btn:hover {
+  background-color: #509295;
+}
+
 .portfolio-btn .arrow {
   margin-left: 10px;
   font-size: 1.5rem;

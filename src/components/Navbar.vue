@@ -12,7 +12,7 @@
       <li><router-link to="/testimonials">Testimonials</router-link></li>
       <li><router-link to="/contact">Contact</router-link></li>
     </ul>
-    <router-link to="/work-with-me" class="work-with-me">
+    <router-link to="/contact" class="work-with-me">
       Work With Me
       <span class="work-icon">&#x2197;</span>
     </router-link>

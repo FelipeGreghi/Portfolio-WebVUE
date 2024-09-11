@@ -36,15 +36,6 @@ export default {
 </script>
 
 <style scoped>
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
@@ -60,7 +51,6 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 0 10%;
-  animation: fadeIn 1s ease-in-out;
 }
 
 .content {
