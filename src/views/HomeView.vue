@@ -1,14 +1,18 @@
 <template>
   <div class="home-view">
     <div class="midle-content">
-      <h1>I'm Felipe<br>Greghi</h1>
-      <img src="@/assets/photo.png">
+      <h1>I'm Felipe<br />Greghi</h1>
+      <img src="@/assets/photo.png" />
     </div>
-    
+
     <div class="content">
       <div class="text-section">
         <p>
-          I am a full-stack developer passionate about creating efficient and scalable solutions. With over 3 years of experience in <b>data management</b> and <b>system integration</b>, I have worked on projects connecting diverse technologies, always striving to simplify and optimize complex processes.
+          I am a full-stack developer passionate about creating efficient and
+          scalable solutions. With over 3 years of experience in
+          <b>data management</b> and <b>system integration</b>, I have worked on
+          projects connecting diverse technologies, always striving to simplify
+          and optimize complex processes.
         </p>
         <button class="portfolio-btn">
           My Portfolio
@@ -21,8 +25,8 @@
 
 <script>
 export default {
-  name: "HomeView",
-};
+  name: 'HomeView',
+}
 </script>
 
 <style scoped>
@@ -91,7 +95,7 @@ export default {
 .home-view h1 {
   margin: 0 0 1em 0;
   font-size: 5em;
-  color: #363E3E;
+  color: #363e3e;
   margin-top: auto;
   max-width: 40%;
   margin-left: 10%;
@@ -99,7 +103,7 @@ export default {
 }
 
 .content {
-  background-color: #363E3E;
+  background-color: #363e3e;
   border-radius: 5em 5em 0 0;
   display: flex;
   flex-direction: row;
@@ -130,7 +134,7 @@ export default {
 }
 
 .portfolio-btn {
-  background-color: #46BABE;
+  background-color: #46babe;
   border: none;
   padding: 15px 25px;
   border-radius: 5px;
@@ -160,7 +164,7 @@ export default {
   position: absolute;
   bottom: 20px;
   right: -10px;
-  background-color: #46BABE;
+  background-color: #46babe;
   color: #fff;
   padding: 10px 15px;
   border-radius: 25px;

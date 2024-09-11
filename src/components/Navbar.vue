@@ -25,14 +25,14 @@ export default {
   data() {
     return {
       isMenuActive: false,
-    };
+    }
   },
   methods: {
     toggleMenu() {
-      this.isMenuActive = !this.isMenuActive;
+      this.isMenuActive = !this.isMenuActive
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -58,7 +58,7 @@ export default {
   margin: 0;
   font-size: 1.25em;
   text-decoration: none;
-  color: #363E3E;
+  color: #363e3e;
 }
 
 .navbar {
@@ -93,17 +93,17 @@ export default {
 
 .nav-links a {
   text-decoration: none;
-  color: #363E3E;
+  color: #363e3e;
   font-weight: bold;
   font-size: 1em;
 }
 
 .nav-links a:hover {
-  color: #46BABE;
+  color: #46babe;
 }
 
 .work-with-me {
-  background-color: #363E3E;
+  background-color: #363e3e;
   color: white;
   padding: 10px 20px;
   border-radius: 50px;
@@ -116,7 +116,7 @@ export default {
 }
 
 .work-with-me .work-icon {
-  background-color: #46BABE;
+  background-color: #46babe;
   color: white;
   border-radius: 50%;
   padding: 5px;
@@ -129,16 +129,16 @@ export default {
 }
 
 .work-with-me:hover {
-  background-color: #46BABE;
+  background-color: #46babe;
   color: white;
 }
 
 .work-with-me:hover .work-icon {
-  background-color: #363E3E;
+  background-color: #363e3e;
 }
 
 a:active {
-  color: #46BABE;
+  color: #46babe;
 }
 
 @media (max-width: 1024px) {
