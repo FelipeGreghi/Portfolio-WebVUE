@@ -111,7 +111,7 @@ export default {
   align-items: center;
   width: 100%;
   height: 50%;
-  padding-bottom: 2.5em;
+  padding: 2em 0;
   margin-top: auto;
 }
 
@@ -219,12 +219,14 @@ export default {
     flex-direction: column;
     height: auto;
     padding: 2em 1em;
+    box-sizing: border-box;
   }
 
   .text-section {
     max-width: 90%;
     margin-left: 0;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .portfolio-btn {
@@ -233,6 +235,22 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .home-view {
+    padding: 10px;
+  }
+
+  .midle-content {
+    width: 100%;
+  }
+
+  .midle-content img {
+    display: none; /* Esconde a imagem em telas menores */
+  }
+
+  .content {
+    width: 100%;
+  }
+
   .home-view h1 {
     font-size: 2.5em;
   }
