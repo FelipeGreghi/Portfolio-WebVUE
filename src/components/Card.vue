@@ -54,7 +54,7 @@ export default {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background-color: #f0f0f0;
 }
-@media (max-width: 1155px) {
+@media (max-width: 1170px) {
   .card {
     flex-direction: column;
     align-items: center;
@@ -71,11 +71,17 @@ export default {
     text-align: center;
   }
 }
+@media (max-width: 940px) {
+  .card {
+    width: 60%;
+  }
+}
 
 @media (max-width: 480px) {
   .card {
     padding: 8px;
     margin: 8px;
+    width: 90%;
   }
 
   .text-component h3 {
