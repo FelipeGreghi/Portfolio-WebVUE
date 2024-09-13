@@ -218,7 +218,6 @@ export default {
 
   .content {
     flex-direction: column;
-    height: auto;
     padding: 2em 1em;
     box-sizing: border-box;
   }
@@ -236,10 +235,6 @@ export default {
 }
 
 @media (max-width: 480px) {
-  .home-view {
-    padding: 10px;
-  }
-
   .midle-content {
     width: 100%;
   }
@@ -253,7 +248,7 @@ export default {
   }
 
   .home-view h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 
   .text-section p {

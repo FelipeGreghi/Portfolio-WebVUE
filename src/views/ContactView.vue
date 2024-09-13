@@ -129,4 +129,42 @@ button {
 button:hover {
   background-color: #509295;
 }
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+    width: 80%;
+    padding: 10%;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    border-right: none;
+    padding: 0;
+  }
+
+  .left-side {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-side h1 {
+    font-size: 2em;
+  }
+
+  .form h3 {
+    font-size: 24px;
+  }
+
+  input,
+  textarea {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}
 </style>
