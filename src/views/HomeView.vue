@@ -203,6 +203,7 @@ export default {
   .midle-content {
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .midle-content img {
