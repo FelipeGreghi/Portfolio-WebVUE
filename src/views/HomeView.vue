@@ -14,7 +14,7 @@
           projects connecting diverse technologies, always striving to simplify
           and optimize complex processes.
         </p>
-        <button class="portfolio-btn">
+        <button class="portfolio-btn" @click="goToPortfolio">
           My Portfolio
           <span class="arrow">→</span>
         </button>
@@ -26,6 +26,11 @@
 <script>
 export default {
   name: 'HomeView',
+  methods: {
+    goToPortfolio() {
+      this.$router.push('/portfolio')
+    },
+  },
 }
 </script>
 
