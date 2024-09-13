@@ -6,6 +6,7 @@
       :image="project.image"
       :title="project.title"
       :description="project.description"
+      :link="project.link"
     />
   </div>
 </template>
@@ -23,15 +24,27 @@ export default {
       projects: [
         {
           id: 1,
-          image: 'Coming soon.png',
+          image: require('@/assets/Comingsoon.png'),
           title: 'Coming soon',
-          description: 'Coming soon',
+          description:
+            'Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon',
+          link: 'https://www.google.com',
         },
         {
           id: 2,
-          image: 'Coming soon.png',
+          image: require('@/assets/Comingsoon.png'),
           title: 'Coming soon',
-          description: 'Coming soon',
+          description:
+            'Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon',
+          link: 'https://www.google.com',
+        },
+        {
+          id: 3,
+          image: require('@/assets/Comingsoon.png'),
+          title: 'Coming soon',
+          description:
+            'Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon Coming soon',
+          link: 'https://www.google.com',
         },
       ],
     }
@@ -39,7 +52,7 @@ export default {
 }
 </script>
   
-  <style scoped>
+<style scoped>
 .portfolio {
   display: flex;
   flex-wrap: wrap;
