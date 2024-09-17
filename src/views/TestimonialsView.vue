@@ -28,7 +28,7 @@ export default {
         {
           id: 1,
           name: 'Gabriel João',
-          position: 'Analista de dados - Krolik',
+          position: 'Analista de Dados - Krolik',
           content:
             'Felipe is one of the best professionals I’ve worked with. He delivers projects on time with excellence and an indispensable attention to detail.',
           image: require('@/assets/testimonialsPhotos/profileImageGJ.jpg'),
