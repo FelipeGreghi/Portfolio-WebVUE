@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import ProfileCard from '../components/Testimonial.vue';
+import ProfileCard from '../components/Testimonial.vue'
 
 export default {
   name: 'TestimonialsView',
@@ -27,40 +27,33 @@ export default {
       testimonials: [
         {
           id: 1,
-          name: 'João Silva',
-          position: 'Desenvolvedor Front-end',
-          content: 'Este produto é incrível! Mudou completamente a forma como trabalho.',
-          image: require('@/assets/Comingsoon.png'),
+          name: 'Gabriel João',
+          position: 'Analista de dados',
+          content:
+            'Felipe is one of the best professionals I’ve worked with. He delivers projects on time with excellence and an indispensable attention to detail.',
+          image: require('@/assets/testimonialsPhotos/profileImageGJ.jpg'),
         },
         {
           id: 2,
-          name: 'Maria Oliveira',
-          position: 'Gerente de Projetos',
-          content: 'A equipe é extremamente profissional e o suporte é excelente.',
+          name: 'Coming Soon',
+          position: 'Coming Soon',
+          content: 'More testimonials coming soon.',
           image: require('@/assets/Comingsoon.png'),
         },
         {
           id: 3,
-          name: 'Carlos Pereira',
-          position: 'Designer Gráfico',
-          content: 'As funcionalidades são exatamente o que eu precisava. Recomendo!',
-          image: require('@/assets/Comingsoon.png'),
-        },
-        {
-          id: 4,
-          name: 'Carlos Pereira',
-          position: 'Designer Gráfico',
-          content: 'As funcionalidades são exatamente o que eu precisava. Recomendo!',
+          name: 'Coming Soon',
+          position: 'Coming Soon',
+          content: 'More testimonials coming soon.',
           image: require('@/assets/Comingsoon.png'),
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>
-
 .testimonials {
   display: flex;
   flex-wrap: wrap;
@@ -82,5 +75,4 @@ export default {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
 </style>
