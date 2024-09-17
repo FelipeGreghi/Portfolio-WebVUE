@@ -28,17 +28,18 @@ export default {
         {
           id: 1,
           name: 'Gabriel João',
-          position: 'Analista de dados',
+          position: 'Analista de dados - Krolik',
           content:
             'Felipe is one of the best professionals I’ve worked with. He delivers projects on time with excellence and an indispensable attention to detail.',
           image: require('@/assets/testimonialsPhotos/profileImageGJ.jpg'),
         },
         {
           id: 2,
-          name: 'Coming Soon',
-          position: 'Coming Soon',
-          content: 'More testimonials coming soon.',
-          image: require('@/assets/Comingsoon.png'),
+          name: 'Fabio Bogo',
+          position: 'Gerente Comercial - Cubus Soluções',
+          content:
+            'Felipe is a well-rounded developer in every aspect. An excellent professional with great communication skills, he excels at handling clients and effortlessly manages an entire project lifecycle, from initiation to development and final delivery.',
+          image: require('@/assets/testimonialsPhotos/profileImageFB.jpg'),
         },
         {
           id: 3,
