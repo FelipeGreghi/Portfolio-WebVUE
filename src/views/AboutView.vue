@@ -2,10 +2,7 @@
   <div class="about">
     <div class="content">
       <div class="image-section">
-        <img
-          src="@/assets/character-archetype-the-hero.jpg"
-          alt="About Me Image"
-        />
+        <img src="@/assets/myProfileImage.jpeg" alt="About Me Image" />
       </div>
       <div class="text-section">
         <h1>ABOUT ME</h1>

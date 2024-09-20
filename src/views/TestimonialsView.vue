@@ -43,10 +43,11 @@ export default {
         },
         {
           id: 3,
-          name: 'Coming Soon',
-          position: 'Coming Soon',
-          content: 'More testimonials coming soon.',
-          image: require('@/assets/Comingsoon.png'),
+          name: 'Julia da Rosa',
+          position: 'Project Manager - Cubus Soluções',
+          content:
+            'Felipe Greghi is a talented programmer with solid skills in algorithms and software development. He excels in solving complex problems and has strong communication skills, enhancing teamwork and idea exchange. With a constant focus on learning and improvement, Felipe combines technical expertise with clear, efficient communication, making him a promising professional in technology.',
+          image: require('@/assets/testimonialsPhotos/profileImageJR.jpg'),
         },
       ],
     }
