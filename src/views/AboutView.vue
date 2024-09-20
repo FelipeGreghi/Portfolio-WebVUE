@@ -77,7 +77,8 @@ export default {
 }
 
 .image-section img {
-  max-width: 300px;
+  max-width: 250px;
+  max-height: 500px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
